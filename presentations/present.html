@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>present</title>
+<style>
+  html, body { 
+    margin: 0; 
+    padding: 0; 
+    background: #000; 
+    height: 100%; 
+    overflow: hidden; 
+    /* Prevent accidental text highlighting while rapidly tapping */
+    user-select: none; 
+    -webkit-user-select: none; 
+  }
+  .slide { 
+    display: none; 
+    width: 100vw; 
+    height: 100vh; 
+    justify-content: center; 
+    align-items: center; 
+  }
+  /* The active slide instantly switches from display:none to display:flex */
+  .slide.active { 
+    display: flex; 
+  }
+  .slide img { 
+    max-width: 100%; 
+    max-height: 100%; 
+    object-fit: contain; 
+  }
+</style>
+</head>
+<body>
+
+<div id="deck">
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-001.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-002.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-003.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-004.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-005.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-006.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-007.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-008.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-009.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-010.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-011.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-012.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-013.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-014.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-015.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-016.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-017.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-018.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-019.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-020.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-021.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-022.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-023.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-024.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-025.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-026.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-027.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-028.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-029.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-030.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-031.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-032.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-033.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-034.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-035.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-036.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-037.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-038.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-039.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-040.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-041.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-042.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-043.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-044.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-045.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-046.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-047.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-048.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-049.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-050.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-051.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-052.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-053.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-054.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-055.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-056.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-057.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-058.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-059.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-060.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-061.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-062.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-063.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-064.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-065.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-066.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-067.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-068.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-069.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-070.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-071.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-072.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-073.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-074.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-075.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-076.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-077.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-078.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-079.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-080.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-081.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-082.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-083.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-084.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-085.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-086.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-087.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-088.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-089.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-090.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-091.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-092.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-093.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-094.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-095.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-096.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-097.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-098.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-099.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-100.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-101.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-102.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-103.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-104.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-105.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-106.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-107.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-108.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-109.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-110.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-111.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-112.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-113.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-114.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-115.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-116.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-117.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-118.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-119.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-120.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-121.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-122.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-123.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-124.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-125.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-126.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-127.png" loading="lazy">
+  </div>
+  
+  <div class="slide">
+    <img src="../presentations/present/slide_-128.png" loading="lazy">
+  </div>
+  
+</div>
+
+<script>
+  const slides = document.querySelectorAll('.slide');
+  let current = 0;
+  
+  // Initialize the first slide
+  if (slides.length > 0) {
+    slides[0].classList.add('active');
+  }
+  
+  // Core transition logic: purely instant, zero animations
+  function showSlide(index) {
+    slides[current].classList.remove('active');
+    current = index;
+    slides[current].classList.add('active');
+  }
+  
+  // Tap/Click Navigation
+  document.body.addEventListener('click', function(e) {
+    const width = window.innerWidth;
+    // Tapping the right 75% of the screen goes FORWARD. 
+    // Tapping the far left 25% of the screen goes BACKWARD.
+    if (e.clientX > width * 0.25) { 
+      if (current < slides.length - 1) showSlide(current + 1);
+    } else { 
+      if (current > 0) showSlide(current - 1);
+    }
+  });
+  
+  // Laptop/Desktop Keyboard Navigation
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'Enter') {
+      if (current < slides.length - 1) showSlide(current + 1);
+    } else if (e.key === 'ArrowLeft') {
+      if (current > 0) showSlide(current - 1);
+    }
+  });
+</script>
+
+</body>
+</html>
