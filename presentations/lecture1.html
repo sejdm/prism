@@ -11,31 +11,44 @@
     background: #000; 
     width: 100%;
     height: 100%; 
-    overflow: hidden; 
-    /* Prevent accidental highlighting while rapidly tapping */
+    overflow: hidden; /* This absolutely prevents scrolling */
     user-select: none; 
     -webkit-user-select: none; 
   }
   
   #slide-container {
+    /* Fixed positioning relative to the actual window */
+    position: fixed;
+    inset: 0;
     display: flex;
     justify-content: center;
     align-items: center;
+    /* Ensure the container is exactly the viewport size */
     width: 100vw;
-    /* Fallback for old browsers */
-    height: 100vh; 
-    /* Modern dynamic viewport perfectly accounts for mobile toolbars */
-    height: 100dvh; 
+    height: 100vh;
+    height: 100dvh;
+    overflow: hidden;
   }
 
   #current-slide { 
-    max-width: 100%; 
-    max-height: 100%; 
-    /* Forces the image to fit entirely inside the screen without stretching */
+    /* Force the image to fit entirely without clipping */
+    max-width: 100vw; 
+    max-height: 100dvh; 
     object-fit: contain; 
-    /* Force GPU hardware acceleration for instant painting */
     transform: translateZ(0); 
   }
+  
+  .nav-btn {
+    position: fixed;
+    bottom: 20px;
+    z-index: 100;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+  }
+  #back-btn { left: 20px; }
 </style>
 </head>
 <body>
