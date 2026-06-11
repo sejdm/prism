@@ -7,8 +7,16 @@
         <description><![CDATA[Get exercises and announcements]]></description>
         <atom:link href="http://sejdm.github.io/prism/rss.xml" rel="self"
                    type="application/rss+xml" />
-        <lastBuildDate>2026-06-10T20:14:54+5:30</lastBuildDate>
+        <lastBuildDate>2026-06-11T17:42:05+5:30</lastBuildDate>
         <item>
+    <title>Exercise sheet 2</title>
+    <link>http://sejdm.github.io/prism/assignments/2026-06-11-exerciseset02.html</link>
+    <description><![CDATA[Exercise sheet 2 has been posted.]]></description>
+    <pubDate>Thu, 11 Jun 2026 00:00:00 UT</pubDate>
+    <guid>http://sejdm.github.io/prism/assignments/2026-06-11-exerciseset02.html</guid>
+    <dc:creator></dc:creator>
+</item>
+<item>
     <title>Exercise sheet 1</title>
     <link>http://sejdm.github.io/prism/assignments/2026-06-10-exerciseset1.html</link>
     <description><![CDATA[Exercise sheet 1 has been posted.]]></description>
