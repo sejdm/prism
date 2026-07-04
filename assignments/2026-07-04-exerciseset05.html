@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>2026-07-04-exerciseset05 - PRISM</title>
+  <meta charset="utf-8" />
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="../css/my.css">
+<link rel="stylesheet" href="../css/syntax.css">
+  <link rel="alternate" type="application/atom+xml" title="PRISM" href="../atom.xml" />
+<script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+</head>
+<body>
+  <div class="navbar">
+
+    <header>
+      <hgroup>
+        <h1><a href="../index.html" id="titlelink">Curves and Surfaces </a></h1>
+      </hgroup>
+    </header>
+
+    <nav id="mainnav">
+      <div id="topmenu">
+        <menu>
+          <a href="../index.html">Course information</a>
+	  
+          <a href="../assignments.html">Exercise sheets</a>
+	  
+	  
+          <a href="../presentations.html">Presentations</a>
+        </menu>
+	</div>
+    </nav>
+    </div>
+
+
+    <section id="pagecontent">
+        <article>
+    <section class="header">
+        <h1>Exercise sheet 5</h1>
+    </section>
+    <section>
+      <p>
+	
+	<a href="../assignments/2026-06-27-exerciseset04.html" class="prev"><<</a>
+	
+	
+      </p>
+<p class="date"><strong>&nbsp;Last modified: 01:38 PM -  4 July, 2026 </strong></p>
+	  
+	  <a href="../assignments/pdfs/2026-07-04-exerciseset05.pdf">PDF version</a>
+	  
+	  
+        <ol>
+<li><p>Given two surface patches <span class="math inline">\(\sigma_{1} : U_1 \to \mathbb{R}^3\)</span> and <span class="math inline">\(\sigma_{2} : U_2 \to \mathbb{R}^3\)</span>, whose images cover the same part of the a given surface <span class="math inline">\(S\)</span> in <span class="math inline">\(\mathbb{R}^3\)</span>, how would you relate them? In other words, define a “coordinate transformation” map to relate <span class="math inline">\(\sigma_1\)</span> and <span class="math inline">\(\sigma_2\)</span> just as we defined a reparametrization to relate two parametrizations <span class="math inline">\(\theta_1\)</span> and <span class="math inline">\(\theta_2\)</span> of curves.</p></li>
+<li><p>Rememember <span class="math inline">\(\mathbf{n}(p)\)</span>, the unit normal to the surface at <span class="math inline">\(p\)</span>, which is defined as <span class="math inline">\(\frac{\sigma_x \times \sigma_y}{\|\sigma_{x}\times \sigma_y}\|\)</span>.</p>
+<ol>
+<li><p>Do you think it depends on the surface patch <span class="math inline">\(\sigma\)</span>? After all, if you change <span class="math inline">\(\sigma\)</span>, the vectors <span class="math inline">\(\sigma_x\)</span> and <span class="math inline">\(\sigma_y\)</span> change.</p></li>
+<li><p>To find out the how <span class="math inline">\(\mathbf{n}(\theta(t))\)</span> changes along the parametrization <span class="math inline">\(\theta\)</span>, i.e. to know <span class="math inline">\(\frac{\mathrm{d}}{\mathrm{d}t}\mathbf{n}(\theta(t))\)</span>, it is enough to figure out <span class="math inline">\(\mathbf{n}_x\)</span> and <span class="math inline">\(\mathbf{n}_y\)</span>. Why is that enough?</p></li>
+<li><p>Show that <span class="math inline">\(\mathbf{n}_x\)</span> and <span class="math inline">\(\mathbf{n}_y\)</span> must be tangent to the surface. Therefore, they are of the form <span class="math inline">\(\mathbf{n}_x = a \sigma_x + b\sigma_{y}\)</span> and <span class="math inline">\(\mathbf{n}_y = c \sigma_x + d\sigma_{y}\)</span> for some scalars <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span>, <span class="math inline">\(c\)</span>, and <span class="math inline">\(d\)</span>.</p></li>
+<li><p>Find out the scalars <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span>, <span class="math inline">\(c\)</span>, and <span class="math inline">\(d\)</span> in terms of the components of the fundamental forms, <span class="math inline">\(E\)</span>, <span class="math inline">\(F\)</span>, <span class="math inline">\(G\)</span>, <span class="math inline">\(L\)</span>, <span class="math inline">\(M\)</span>, and <span class="math inline">\(N\)</span>. You might find the computation easier if you arrange the coefficients in a matrix <span class="math display">\[\begin{pmatrix}
+        a &amp; b \\
+        c &amp; d
+      \end{pmatrix}\]</span> You will then be able to express it as a matrix multiplication of two matrices which have <span class="math inline">\(E\)</span>, <span class="math inline">\(F\)</span>, <span class="math inline">\(G\)</span>, <span class="math inline">\(L\)</span>, <span class="math inline">\(M\)</span>, <span class="math inline">\(N\)</span> in their entries.</p></li>
+</ol></li>
+<li><p>Consider the sphere of radius 1. Show that any curve that lies on the sphere and has geodesic curvature 0, must be a great circle. To do this, you must first define a suitable surface patch on part of the sphere.</p></li>
+</ol>
+    </section>
+</article>
+
+    </section>
+
+<section id="posts" class="sidenav">
+
+    <h2>Latest exercise sheet</h2>
+<ul>
+    
+        <li>
+          <a href="../assignments/2026-07-04-exerciseset05.html">Exercise sheet 5</a>
+	   /
+	  <a href="../assignments/pdfs/2026-07-04-exerciseset05.pdf">PDF version</a>
+	  
+	  
+        </li>
+    
+        <li>
+          <a href="../assignments/2026-06-27-exerciseset04.html">Exercise sheet 4</a>
+	   /
+	  <a href="../assignments/pdfs/2026-06-27-exerciseset04.pdf">PDF version</a>
+	  
+	  
+        </li>
+    
+</ul>
+
+    <p><a href="../assignments.html">All exercise sheets&hellip;</a></p>
+
+
+
+
+
+
+
+    
+</section>
+</body>
+</html>
